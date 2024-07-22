@@ -1,0 +1,13 @@
+Accés a Dades
+
+
+[Següent »](objectius.md)
+# <a name="main"></a>**Tema 1: Gestió del Sistema de fitxers**
+
+
+![ref1](T1_Portada.png)
+
+[Següent »](objectius.md)
+
+Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)
+**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
