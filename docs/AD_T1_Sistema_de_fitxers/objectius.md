@@ -10,8 +10,6 @@ Tan sols arribarem a "veure" el fitxer, amb la seua ruta. De fet la manera d'arr
 És un tema molt curtet que es podria haver englobat amb els dos temes següents, també de fitxers. Però hem preferit separar-lo per ser principi de curs, per a poder anar "rodant" sense presses.
 
 
-[« Anterior](index.md) | [Següent »](1_introducci.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)
 
 

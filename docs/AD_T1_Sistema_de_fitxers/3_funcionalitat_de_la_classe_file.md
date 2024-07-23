@@ -224,7 +224,6 @@ I el resultat seria, si introduïm el directori actual ( . ):
 
 Es pot observar que primer mostra un determinat directori i després tot el seu contingut. Per exemple **./src** està abans que tots els seus descendents. Amb **walkBottomUp()** seria a l'inrevès, per exemple primer tots els descendents de **./src**, i després el propi **./src**
 
-[« Anterior](2_la_classe_file_generalitats.md) | [Següent »](exercici.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)
 

@@ -28,7 +28,6 @@ Modifica l'anterior per a que també ens proporcione dades sobre si és un direc
 
 ![ref3](T1_Ex_1_2.png)
 
-[« Anterior](3_funcionalitat_de_la_classe_file.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)
 

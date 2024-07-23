@@ -23,7 +23,5 @@ F:\dir\_1\dir\_2\dir\_3\...\dir\_n\fitxer.txt
 
 
 
-[« Anterior](objectius.md) | [Següent »](2_la_classe_file_generalitats.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)
 

@@ -9,8 +9,6 @@ Com a pas previ i inicial instal·larem l'entorn de treball des d'on programarem
 
 En el moment de fer aquestos apunts l'última versió és la 2022.2.1. El següent vídeo mostra tot el procés d'instal·lació i creació del primer projecte. Correspon a una versió anterior, però totalment similar a l'actual
 
-[« Anterior](index.md) | [Següent »](1_introducci.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)
 
 

@@ -146,7 +146,4 @@ fun main(args: Array<String>) {
 }
 
 
-
-[« Anterior](1_introducci.md) | [Següent »](3_funcionalitat_de_la_classe_file.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)
