@@ -1,7 +1,3 @@
-Accés a Dades
-
-
-[« Anterior](2_la_classe_file_generalitats.md) | [Següent »](exercici.md)
 # <a name="main"></a>**3.- Funcionalitat de la classe File**
 La classe **File** conté una sèrie de mètodes que ens permeten traure informació relativa al fitxer o directori al que apunta, així com poder navegar (obtenint el pare o accedint a algun dels directoris fills). També ens permetran manipular ambdues coses, modificant la informació i l'estructura de directoris (crear directoris nous, esborrar, canviar el nom, ...). Veurem alguns d'ells, agrupats per categories.
 

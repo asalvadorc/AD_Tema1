@@ -1,6 +1,3 @@
-Accés a Dades
-
--[« Anterior](index.md) | [Següent »](Idea.md)
 # <a name="main"></a> **Objectius**  
 
 L'objectiu del primer tema és senzillament arribar als fitxers, però no al seu contingut, que es veurà en el proper tema.

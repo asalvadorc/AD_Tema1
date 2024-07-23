@@ -1,6 +1,3 @@
-Accés a Dades
-
--[« Anterior](index.md) | [Següent »](1_introducci.md)
 # <a name="main"></a> **INSTAL·LACIÓ D'INTELLIJ IDEA ULTIMATE**
 
 Tots els nostres programes seran en **KOTLIN**, que és un llenguatge que està per damunt de Java, de manera que tots els programes, classes...  realitzats en Java els podrem utilitzar sense problemes, i a més ens permetrà una programació molt més còmoda. A més, és el llenguatge que utilitzareu tant en el mòdul de PMDM com en el de DI

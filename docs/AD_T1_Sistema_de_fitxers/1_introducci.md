@@ -1,7 +1,3 @@
-Accés a Dades
-
-
-[« Anterior](objectius.md) | [Següent »](2_la_classe_file_generalitats.md)
 # <a name="main"></a>**1.- Introducció**
 Un **fitxer** o **arxiu** és un conjunt de bits guardats en un dispositiu (com podria ser per exemple un disc dur). Els fitxers ens garantitzen la **persistència**, ja que encara que apaguem l'ordinador podrem recuperar la informació, cosa que no passaria amb la informació guardada en memòria RAM. El tema de la persistència és justament el que buscarem durant tot el curs.
 

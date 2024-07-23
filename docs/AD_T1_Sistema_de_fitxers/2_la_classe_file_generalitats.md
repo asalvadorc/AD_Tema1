@@ -1,7 +1,3 @@
-Accés a Dades
-
-
-[« Anterior](1_introducci.md) | [Següent »](3_funcionalitat_de_la_classe_file.md)
 # <a name="main"></a>**2.- La classe File. Generalitats.**
 En Java, i també en Kotlin per ser una espècie d'extensió de Java, per a gestionar el sistema de fitxers s’utilitza bàsicament la classe ‘**File**’. És una classe que s’ha d’entendre com una referència a la ruta o localització de fitxers del sistema. **NO representa el contingut** de cap fitxer, sinó la ruta del sistema on es localitza el fitxer. Com que es tracta d’una ruta, *la classe pot representar tant **fitxers** com **carpetes o directoris***.  
 

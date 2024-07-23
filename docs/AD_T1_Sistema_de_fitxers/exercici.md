@@ -1,6 +1,3 @@
-Accés a Dades
-
-[« Anterior](3_funcionalitat_de_la_classe_file.md)
 # <a name="main"></a>**Exercici 1**
 
 Realitza un programa en un fitxer anomenat **Exercici\_1.kt** en el paquet **exercicis**, que permeta navegar pels directoris de la unitat principal del sistema d'arxius.
