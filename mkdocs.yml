@@ -7,6 +7,7 @@ theme:
   logo: assets/logocaminas.png
 
 nav:
+- Accés a Dades:
   - Tema 1- Gestió del Sistema de fitxers:
     - Objectius: AD_T1_Sistema_de_fitxers/objectius.md
     - Instal.lació de IntelliJ Idea Ultimate: AD_T1_Sistema_de_fitxers/Idea.md
