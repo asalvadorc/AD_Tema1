@@ -11,9 +11,9 @@ Per a crear un objecte **File** es pot utilitzar qualsevol dels 3 constructors s
 
 - **File(String *directori\_i\_fitxer*)**: indiquem en un únic paràmetre tant el directori com el fitxer, és a dir, el fitxer amb la seua ruta. Recordeu que en sistemes Linux per a la ruta utilitzem la barra de dividir, mentre que en Windows la contra-barra. Com que aquest caràcter és el d'*escape*, s'haurà de posar dues vegades: 
 
-val fitxer\_1 = File("/home/usuari/AD/T1/exemple1.txt")
+`val fitxer\_1 = File("/home/usuari/AD/T1/exemple1.txt")`
 
-val fitxer\_1 = File("C:\\AD\\T1\\exemple1.txt")
+`val fitxer\_1 = File("C:\\AD\\T1\\exemple1.txt")`
 
 **Nota** 
 
@@ -23,11 +23,11 @@ Per una altra banda, observeu com hem utilitzat la paraula reservada **val** per
 
 Per a fer referència a un directori s'utilitza la mateixa tècnica, com ja havíem vist:
 
-val dir = File("/home/usuari/AD/T1")
+`val dir = File("/home/usuari/AD/T1")`
 
 En els exemples anteriors hem posat una ruta absoluta, que comença des de l'arrel. Si no la posem absoluta (si no comença per / ) serà relativa i començarà en el directori actiu. Si suposem que el directori actiu és **/home/usuari**, d'aquesta manera faríem referència al mateix lloc:
 
-val dir = File("AD/T1");
+`val dir = File("AD/T1");`
 
 **Nota** 
 
@@ -35,11 +35,11 @@ Observeu que les anteriors sentències no donarien cap error encara que els subd
 
 - **File(String *directori*, String *fitxer*)**: en el primer paràmetre (String) indiquem el directori amb ruta, i en el segon el fitxer (sense ruta). Farà referència a un fitxer amb el nom com el segon paràmetre col·locat en el directori referenciat en el primer paràmetre. Observeu com el segon paràmetre podria ser també un directori, i per tant seria una referència a un subdirectori del directori referenciat en el primer paràmetre. 
 
-val fitxer\_2 = File("/home/usuari/AD/T1" , "exemple2.txt")
+`val fitxer\_2 = File("/home/usuari/AD/T1" , "exemple2.txt")`
 
 - **File(File *directori*, String *fitxer*)**: Ara el directori és un File creat anteriorment 
 
-val fitxer\_3 = File(dir , "exemple3.txt")
+`val fitxer\_3 = File(dir , "exemple3.txt")`
 
 
 
@@ -63,24 +63,20 @@ En l'apartat d'objectius d'aquest tema, que és el de l'inici hi ha un vídeo qu
 
 Mirem un exemple. Anem a fer un programa per a traure la llista de fitxers i directoris del directori actual. Per a fer referència al directori actual, utilitzarem ".", que ens serveix per a tots els Sistemes. Per defecte, el directori actiu és el directori del projecte. Per a obtenir la llista d'elements (fitxers i directoris) utilitzarem el mètode **list()** de la classe **File**. Veurem aquest mètode, juntament amb els mètodes més importants en la següent pregunta. Copieu-vos el següent en un fitxer Kotlin anomenat **Exemple\_1\_1.kt**
 
+```java
 package exemples
 
 import java.io.File
 
 fun main(args: Array<String>) {
 
-`	`val f = File(".")
-
-`	`println("Llista de fitxers i directoris del directori actual")
-
-`	`println("---------------------------------------------------")
-
-`	`for (e in f.list())
-
-`		`println(e);
-
+    val f = File(".")
+    println("Llista de fitxers i directoris del directori actual")
+    println "----------------------------------------------")
+    for (e in f.list())
+       println(e);
 }
-
+```
 I aquest seria el resultat:
 
 ![ref1](T1_2_1.png)
@@ -89,24 +85,25 @@ que són els fitxers del directori arrel del projecte Tema1 (situat en la carpet
 
 I aprofitant la potencialitat de Kotlin, podem traure fàcilment aquesta llista ordenada alfabèticament, senzillament posant **.sorted()**. D'aquesta manera, el programa anterior **Exemple\_1\_1.kt** ens quedarà ara:
 
+```java
 package exemples
 
 import java.io.File
 
 fun main(args: Array<String>) {
 
-`	`val f = File(".")
+    val f = File(".")
 
-`	`println("Llista de fitxers i directoris del directori actual")
+    println("Llista de fitxers i directoris del directori actual")
 
-`	`println("---------------------------------------------------")
+    println("---------------------------------------------------")
 
-`	`for (e in f.list().sorted())
+    for (e in f.list().sorted())
 
-`		`println(e);
+    println(e);
 
 }
-
+```
 I aquest seria el resultat:
 
 ![ref2](T1_2_2.png)
@@ -114,7 +111,7 @@ I aquest seria el resultat:
 Si vulguérem traure el contingut d'un directori concret, el posaríem en el moment de definir el File, en compte del punt per a indicar el directori actual.
 
 Una altra modificació seria demanar per teclat el directori del qual volem mostrar el contingut. Copieu el següent codi en el fitxer Kotlin **Exemple\_1\_2.kt**
-
+```java
 package exemples
 
 import java.io.File
@@ -125,21 +122,21 @@ import java.io.InputStreamReader
 
 fun main(args: Array<String>) {
 
-`	`println("Introdueix un directori:")
+    println("Introdueix un directori:")
 
-`	`val ent = BufferedReader(InputStreamReader(System.`in`)).readLine()
+    val ent = BufferedReader(InputStreamReader(System.`in`)).readLine()
 
-`	`val f = File(ent)
+    val f = File(ent)
 
-`	`System.out.println("Llista de fitxers i directoris del directori " + ent)
+    System.out.println("Llista de fitxers i directoris del directori " + ent)
 
-`	`System.out.println("---------------------------------------------------")
+    System.out.println("---------------------------------------------------")
 
-`	`for (e in f.list().sorted())
+    for (e in f.list().sorted())
 
-`		`System.out.println(e);
+    System.out.println(e);
 
 }
-
+```
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 2.5](http://creativecommons.org/licenses/by-nc-sa/2.5/)

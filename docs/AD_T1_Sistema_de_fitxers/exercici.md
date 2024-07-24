@@ -19,7 +19,7 @@ La següent imatge mostra el resultat:
 
 ![ref2](T1_Ex_1_1.png)
 
-Voluntari
+<span style="color: blue;">Voluntari</span>
 
 Modifica l'anterior per a que també ens proporcione dades sobre si és un directori, els permisos, grandària i data de modificació a l'estil de Linux quan fas **ls -l** . L'aspecte podria ser aquest:
 

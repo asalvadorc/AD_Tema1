@@ -2,8 +2,12 @@ site_url : https://asalvadorc.github.io/AD_Tema1
 
 site_name: AD - Accés a Dades
 
+extra_css:
+  - css/extra.css
+
 theme: 
   name: readthedocs
+  highlightjs: true
   logo: assets/logocaminas.png
 
 nav:
