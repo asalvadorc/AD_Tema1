@@ -24,7 +24,7 @@ Una altra cosa que pot dur a engany és que perfectament **pot no existir** el f
 
 **getCanonicalPath()** dóna la ruta absoluta, des de l'arrel, i sense redundàncies. Té com a inconvenient una utilització més complicada que getAbsolutePath.
 
-En el següent exemple s'intenta mostrar això de les redundàncies, que **getCanonicalPath()** resol completament. Observeu com per a il·lustrar l'exemple fem referència a un fitxer d'una forma complicada. Suposem que el directori actiu és **/home/usuari/workspace/Tema1**, i volem fer referència a un fitxer situat en un subdirectori anomenat **fitxers**. Si copiem el següent codi en el fitxer **Exemple\_1\_3.kt**:
+En el següent exemple s'intenta mostrar això de les redundàncies, que **getCanonicalPath()** resol completament. Observeu com per a il·lustrar l'exemple fem referència a un fitxer d'una forma complicada. Suposem que el directori actiu és **/home/usuari/workspace/Tema1**, i volem fer referència a un fitxer situat en un subdirectori anomenat **fitxers**. Si copiem el següent codi en el fitxer **Exemple_1_3.kt**:
 ```java
 package exemples
 
@@ -76,7 +76,7 @@ Ja hem vist la utilitat de **list()**, que torna un array de strings. En ocasion
 
 Com ja havíem comentat abans, en el moment de crear el File, pot ser existesca o no el fitxer o directori, és a dir, que potser es corresponga o no amb un fitxer real. Si volem comprovar l'existència podem utilitzar el mètode **exists()**.
 
-Anem a modificar l'exemple 2, on tornàvem tots els fitxers i directoris d'un directori introduït per teclat. Primer ens assegurem que existeix i és un directori. Després el millorarem tornant la grandària de cada fitxer si és un fitxer, i especificant que és un directori, si ho és. Ens convindrà **listFiles()** per a poder mirar si és un fitxer o directori, la grandària, ... També hem aprofitat per crear el mètode estàtic **llistat(File)**, que mostrarà el contingut del directori on apunta el File, i així estructurar-lo un poc millor. Copieu el següent codi en un fitxer anomenat **Exemple\_1\_4.kt**
+Anem a modificar l'exemple 2, on tornàvem tots els fitxers i directoris d'un directori introduït per teclat. Primer ens assegurem que existeix i és un directori. Després el millorarem tornant la grandària de cada fitxer si és un fitxer, i especificant que és un directori, si ho és. Ens convindrà **listFiles()** per a poder mirar si és un fitxer o directori, la grandària, ... També hem aprofitat per crear el mètode estàtic **llistat(File)**, que mostrarà el contingut del directori on apunta el File, i així estructurar-lo un poc millor. Copieu el següent codi en un fitxer anomenat **Exemple_1_4.kt**
 ```java
 package exemples
 
@@ -137,7 +137,7 @@ Ens permetran crear diectoris, fitxers buits i esborrar-los
 |**delete()** |Esborra el fitxer o directori |
 |**mkdir()** |Crea un directori amb el nom indicat en la creació del File. Ha d'existir el directori pare|
 |**mkdirs()**|Com l'anterior, però si cal crea tots els directoris de la ruta necessaris|
-|**renameTo(String nou\_nom)** |Canvia el nom del fitxer o directori |
+|**renameTo(String nou_nom)** |Canvia el nom del fitxer o directori |
 
 <span style="color: blue;">Mètodes sobre l'espai del dispositiu</span>
 
@@ -161,7 +161,7 @@ Kotlin afegeix funcionalitat a la classe File. Així el següents mètodes són 
 
 Per tant són una forma còmoda per a accedir a tota l'estructura de directoris i fitxers que pengen de l'actual directori.
 
-Modificarem l'exemple 2, per a mostrar ara tots els descendents del directori intruït per teclat. Copieu el següent codi en en un fitxer anomenat **Exemple\_1\_5.kt**
+Modificarem l'exemple 2, per a mostrar ara tots els descendents del directori intruït per teclat. Copieu el següent codi en en un fitxer anomenat **Exemple_1_5.kt**
 
 ```java
 package exemples

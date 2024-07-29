@@ -9,11 +9,11 @@ Els objectes creats de la classe File es troben estretament vinculats a la ruta 
 
 Per a crear un objecte **File** es pot utilitzar qualsevol dels 3 constructors següents:
 
-- **File(String *directori\_i\_fitxer*)**: indiquem en un únic paràmetre tant el directori com el fitxer, és a dir, el fitxer amb la seua ruta. Recordeu que en sistemes Linux per a la ruta utilitzem la barra de dividir, mentre que en Windows la contra-barra. Com que aquest caràcter és el d'*escape*, s'haurà de posar dues vegades: 
+- **File(String *directori_i_fitxer*)**: indiquem en un únic paràmetre tant el directori com el fitxer, és a dir, el fitxer amb la seua ruta. Recordeu que en sistemes Linux per a la ruta utilitzem la barra de dividir, mentre que en Windows la contra-barra. Com que aquest caràcter és el d'*escape*, s'haurà de posar dues vegades: 
 
-`val fitxer\_1 = File("/home/usuari/AD/T1/exemple1.txt")`
+`val fitxer_1 = File("/home/usuari/AD/T1/exemple1.txt")`
 
-`val fitxer\_1 = File("C:\\AD\\T1\\exemple1.txt")`
+`val fitxer_1 = File("C:\\AD\\T1\\exemple1.txt")`
 
 **Nota** 
 
@@ -35,11 +35,11 @@ Observeu que les anteriors sentències no donarien cap error encara que els subd
 
 - **File(String *directori*, String *fitxer*)**: en el primer paràmetre (String) indiquem el directori amb ruta, i en el segon el fitxer (sense ruta). Farà referència a un fitxer amb el nom com el segon paràmetre col·locat en el directori referenciat en el primer paràmetre. Observeu com el segon paràmetre podria ser també un directori, i per tant seria una referència a un subdirectori del directori referenciat en el primer paràmetre. 
 
-`val fitxer\_2 = File("/home/usuari/AD/T1" , "exemple2.txt")`
+`val fitxer_2 = File("/home/usuari/AD/T1" , "exemple2.txt")`
 
 - **File(File *directori*, String *fitxer*)**: Ara el directori és un File creat anteriorment 
 
-`val fitxer\_3 = File(dir , "exemple3.txt")`
+`val fitxer_3 = File(dir , "exemple3.txt")`
 
 
 
@@ -61,7 +61,7 @@ Tots els exemples i exercicis de cada tema els col·locarem en un únic projecte
 
 En l'apartat d'objectius d'aquest tema, que és el de l'inici hi ha un vídeo que explica la instal·lació de l'entorn de programació, **IntelliJ IDEA**, i al final d'aquest vídeo s'explica com crear el projecte, els paquets exemples i exercicis i com copiar els programes en un fitxer Kotlin.
 
-Mirem un exemple. Anem a fer un programa per a traure la llista de fitxers i directoris del directori actual. Per a fer referència al directori actual, utilitzarem ".", que ens serveix per a tots els Sistemes. Per defecte, el directori actiu és el directori del projecte. Per a obtenir la llista d'elements (fitxers i directoris) utilitzarem el mètode **list()** de la classe **File**. Veurem aquest mètode, juntament amb els mètodes més importants en la següent pregunta. Copieu-vos el següent en un fitxer Kotlin anomenat **Exemple\_1\_1.kt**
+Mirem un exemple. Anem a fer un programa per a traure la llista de fitxers i directoris del directori actual. Per a fer referència al directori actual, utilitzarem ".", que ens serveix per a tots els Sistemes. Per defecte, el directori actiu és el directori del projecte. Per a obtenir la llista d'elements (fitxers i directoris) utilitzarem el mètode **list()** de la classe **File**. Veurem aquest mètode, juntament amb els mètodes més importants en la següent pregunta. Copieu-vos el següent en un fitxer Kotlin anomenat **Exemple_1_1.kt**
 
 ```java
 package exemples
@@ -83,7 +83,7 @@ I aquest seria el resultat:
 
 que són els fitxers del directori arrel del projecte Tema1 (situat en la carpeta **IdeaProjects**). Observeu que fins i tot mostra els fitxers ocults (que són els que comencen per un punt)
 
-I aprofitant la potencialitat de Kotlin, podem traure fàcilment aquesta llista ordenada alfabèticament, senzillament posant **.sorted()**. D'aquesta manera, el programa anterior **Exemple\_1\_1.kt** ens quedarà ara:
+I aprofitant la potencialitat de Kotlin, podem traure fàcilment aquesta llista ordenada alfabèticament, senzillament posant **.sorted()**. D'aquesta manera, el programa anterior **Exemple_1_1.kt** ens quedarà ara:
 
 ```java
 package exemples
@@ -105,7 +105,7 @@ I aquest seria el resultat:
 
 Si vulguérem traure el contingut d'un directori concret, el posaríem en el moment de definir el File, en compte del punt per a indicar el directori actual.
 
-Una altra modificació seria demanar per teclat el directori del qual volem mostrar el contingut. Copieu el següent codi en el fitxer Kotlin **Exemple\_1\_2.kt**
+Una altra modificació seria demanar per teclat el directori del qual volem mostrar el contingut. Copieu el següent codi en el fitxer Kotlin **Exemple_1_2.kt**
 ```java
 package exemples
 

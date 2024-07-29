@@ -1,6 +1,6 @@
 # <a name="main"></a>**Exercici 1**
 
-Realitza un programa en un fitxer anomenat **Exercici\_1.kt** en el paquet **exercicis**, que permeta navegar pels directoris de la unitat principal del sistema d'arxius.
+Realitza un programa en un fitxer anomenat **Exercici_1.kt** en el paquet **exercicis**, que permeta navegar pels directoris de la unitat principal del sistema d'arxius.
 
 - Ha de començar per l'arrel (/ en Linux; c:\ en Windows). Recordeu que el mètode estàtic **File.listRoots()[0]** ens dóna l'arrel.
 - Ha d'indicar el directori que està mostrant.
