@@ -11,12 +11,11 @@ theme:
   logo: assets/logocaminas.png
 
 nav:
-- Accés a Dades:
-  - Tema 1- Gestió del Sistema de fitxers:
-    - Objectius: AD_T1_Sistema_de_fitxers/objectius.md
-    - Instal.lació de IntelliJ Idea Ultimate: AD_T1_Sistema_de_fitxers/Idea.md
-    - 1. Introducció: AD_T1_Sistema_de_fitxers/1_introducci.md
-    - 2. La classe File. Generalitats.:  AD_T1_Sistema_de_fitxers/2_la_classe_file_generalitats.md
-    - 3. Funcionalitat de la classe File: AD_T1_Sistema_de_fitxers/3_funcionalitat_de_la_classe_file.md
-    - Exercici: AD_T1_Sistema_de_fitxers/exercici.md
+- Tema 1- Gestió del Sistema de fitxers:
+  - Objectius: AD_T1_Sistema_de_fitxers/objectius.md
+  - Instal.lació de IntelliJ Idea Ultimate: AD_T1_Sistema_de_fitxers/Idea.md
+  - 1. Introducció: AD_T1_Sistema_de_fitxers/1_introducci.md
+  - 2. La classe File. Generalitats.:  AD_T1_Sistema_de_fitxers/2_la_classe_file_generalitats.md
+  - 3. Funcionalitat de la classe File: AD_T1_Sistema_de_fitxers/3_funcionalitat_de_la_classe_file.md
+  - Exercici: AD_T1_Sistema_de_fitxers/exercici.md
   
