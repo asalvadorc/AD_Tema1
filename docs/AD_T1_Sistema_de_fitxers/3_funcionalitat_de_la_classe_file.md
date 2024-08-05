@@ -14,18 +14,18 @@ File anomenat **listRoots()**. En sistemes Linux tornarà un únic element, per�
 en sistemes Windows tornarà l'arrel de cada unitat del sistema, per això és un
 array. Aquesta és una manera d'obtenir un File que apunta a l'arrel (i en el
 cas de Windows a l'arrel de C:):
-
+~~~
 val f = File.listRoots()[0]
-
+~~~
 Si en Windows vulguérem anar a l'arrel de **D:** , hauríem de posar
-**File.listRoots()[1]** , i així successivament.
+**File.listRoots() [1]** , i així successivament.
 
 Una altra cosa que pot dur a engany és que perfectament **pot no existir** el
 fitxer o directori especificat en la creació del File. Recordeu que no estem
 accedint encara al contingut dels fitxers. I perfectament podem crear un File
 d'un fitxer o directori que no existeix, justament per a crear-lo.
 
-Mètodes per a obtenir el nom o la ruta
+```Mètodes per a obtenir el nom o la ruta```
 
 **getName()** | Torna el nom del fitxer o directori   
 ---|---  
@@ -67,20 +67,16 @@ codi en el fitxer **Exemple_1_3.kt** :
 Si suposem que el directori actiu és
 **/home/usuari/IdeaProjects/Tema1**(recordeu que per defecte el directori
 actiu és el directori on està el projecte), el resultat serà:
-
+~~~
 Nom del fitxer: f1.txt
-
 Ruta del fitxer: fitxers/../fitxers/f1.txt
-
-Ruta absoluta del fitxer:
-/home/usuari/IdeaProjects/Tema1/fitxers/../fitxers/f1.txt
-
+Ruta absoluta del fitxer: /home/usuari/IdeaProjects/Tema1/fitxers/../fitxers/f1.txt
 Ruta absoluta del fitxer: /home/usuari/IdeaProjects/Tema1/fitxers/f1.txt
-
+~~~
 Recordeu que no cal que existesca el fitxer **f1.txt** , o el subdirectori
 **fitxers**.
 
-Mètodes per a obtenir els fills o el pare
+```Mètodes per a obtenir els fills o el pare```
 
 **list()** | Torna un **array de Strings** amb els noms de tots els elements continguts en el File   
 ---|---  
@@ -93,7 +89,7 @@ ocasions ens serà de moltíssima utilitat **listFiles()** , ja que torna un
 array de Files. Si a açò adjuntem els mètodes **getParent()** i
 **getParentFile()** , veiem que podrem navegar pel sistema de fitxers.
 
-Mètodes per veure l'existència i característiques
+```Mètodes per veure l'existència i característiques```
 
 **exists()** | Torna true si el fitxer o directori existeix   
 ---|---  
@@ -154,7 +150,7 @@ I aquest seria el resultat si introduïm el directori actual ( . )
 
 ![](T1_3_1.png)
 
-Mètodes per als permisos
+```Mètodes per als permisos```
 
 Els següents mètodes ens permeten consultar i modificar els permisos del File,
 al més pur estil Linux
@@ -167,7 +163,7 @@ al més pur estil Linux
 **setWritable(Boolean,Boolean)** | Dóna permís d'escriptura o no, segons el valor del primer paràmetre. El segon actua igual que abans  
 **setExecutable(Boolean,Boolean)** | Dóna permís d'execució, segons el valor del primer paràmetre. El segon actua igual que abans  
   
-Mètodes de creació i esborrat
+```Mètodes de creació i esborrat```
 
 Ens permetran crear diectoris, fitxers buits i esborrar-los
 
@@ -178,7 +174,7 @@ Ens permetran crear diectoris, fitxers buits i esborrar-los
 **mkdirs()** | Com l'anterior, però si cal crea tots els directoris de la ruta necessaris  
 **renameTo(String nou_nom)** | Canvia el nom del fitxer o directori   
   
-Mètodes sobre l'espai del dispositiu
+```Mètodes sobre l'espai del dispositiu```
 
 També disposem de mètodes que ens diuen l'espai total i lliure del dispositiu
 on està situat el File
@@ -188,7 +184,7 @@ on està situat el File
 **getUsableSpace()** | Torna l'espai utilitzable per l'aplicació (menor que l'espai lliure)  
 **getTotalSpace()** | Torna l'espai total del dispositiu on està situat el File   
   
-Mètodes específics de Kotlin
+```Mètodes específics de Kotlin```
 
 Kotlin afegeix funcionalitat a la classe File. Així el següents mètodes són
 específics de Kotlin, i no els trobaríem en Java

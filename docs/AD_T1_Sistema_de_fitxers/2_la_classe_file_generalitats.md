@@ -5,7 +5,7 @@ gestionar el sistema de fitxers s’utilitza bàsicament la classe ‘**File** �
 És una classe que s’ha d’entendre com una referència a la ruta o localització
 de fitxers del sistema. **NO representa el contingut** de cap fitxer, sinó la
 ruta del sistema on es localitza el fitxer. Com que es tracta d’una ruta, _la
-classe pot representar tant**fitxers** com **carpetes o directoris**_.
+classe pot representar tant **fitxers** com **carpetes o directoris**_.
 
 Si fem servir una classe per a representar rutes, s’aconsegueix una total
 independència respecte de la notació que utilitza cada sistema operatiu per
@@ -30,51 +30,57 @@ Per a crear un objecte **File** es pot utilitzar qualsevol dels 3 constructors
 següents:
 
   * **File(String _directori_i_fitxer_)**: indiquem en un únic paràmetre tant el directori com el fitxer, és a dir, el fitxer amb la seua ruta. Recordeu que en sistemes Linux per a la ruta utilitzem la barra de dividir, mentre que en Windows la contra-barra. Com que aquest caràcter és el d'_escape_ , s'haurà de posar dues vegades: 
-
+~~~
 val fitxer_1 = File("/home/usuari/AD/T1/exemple1.txt")
 
 val fitxer_1 = File("C:\\\AD\\\T1\\\exemple1.txt")
+~~~
 
-**Nota**
+<u>**Nota**</u>
 
+<div style="background-color: #d6eaf8; color: black; padding: 5px;">
 Cap de les referències anteriors són desitjables, ja que nosaltres intentarem
 fer programes que funcionen en qualsevol plataforma, i la primera referència
 no funcionarà en Windows, i la segona no funcionarà en Linux. Al llarg del
 tema aprendrem com fer les referències de manera que funcionen en qualsevol
 plataforma.
-
-Per una altra banda, observeu com hem utilitzat la paraula reservada **val**
+<p></p>
+Per una altra banda, observeu com hem utilitzat la paraula reservada <b>val</b>
 per a crear una constant. Quasi sempre la utilitzarem per als File, ja que
 només en algunes ocasions voldrem reutilitzar la variable assignant-li un
 altre valor
+</div>
+---
 
 Per a fer referència a un directori s'utilitza la mateixa tècnica, com ja
 havíem vist:
 
+~~~
 val dir = File("/home/usuari/AD/T1")
-
+~~~
 En els exemples anteriors hem posat una ruta absoluta, que comença des de
 l'arrel. Si no la posem absoluta (si no comença per / ) serà relativa i
 començarà en el directori actiu. Si suposem que el directori actiu és
 **/home/usuari** , d'aquesta manera faríem referència al mateix lloc:
-
+~~~
 val dir = File("AD/T1");
-
-**Nota**
-
+~~~
+<u>** Nota**</u>
+<div style="background-color: #d6eaf8; color: black; padding: 5px;">
 Observeu que les anteriors sentències no donarien cap error encara que els
 subdirectoris i fitxers no existisquen. No és cap contradicció, ja que podria
 ser que férem referència en un File a un fitxer o directori justament per a
 crear-lo. Més avant veurem que tenim mètodes per a detectar l'existència real
-
+</div>
+---
   * **File(String _directori_ , String _fitxer_)**: en el primer paràmetre (String) indiquem el directori amb ruta, i en el segon el fitxer (sense ruta). Farà referència a un fitxer amb el nom com el segon paràmetre col·locat en el directori referenciat en el primer paràmetre. Observeu com el segon paràmetre podria ser també un directori, i per tant seria una referència a un subdirectori del directori referenciat en el primer paràmetre. 
-
+~~~
 val fitxer_2 = File("/home/usuari/AD/T1" , "exemple2.txt")
-
+~~~
   * **File(File _directori_ , String _fitxer_)**: Ara el directori és un File creat anteriorment 
-
+~~~
 val fitxer_3 = File(dir , "exemple3.txt")
-
+~~~
 En els exemples anteriors hem posat directament les rutes. Però els
 programadors de Java i de Kotlin han de fer un esforç per independitzar les
 aplicacions implementades de les plataformes on s’executaran. Per tant, haurem
@@ -100,18 +106,19 @@ Això es resoldrà en el següent tema. Kotlin sí que ens permetrà accedir al
 contingut dels fitxers a partir de la classe File, però per coherència ho
 deixarem per al proper tema.
 
-**Nota  
-**
-
+<u>**Nota**</u> 
+<div style="background-color: #d6eaf8; color: black; padding: 5px;">
 Tots els exemples i exercicis de cada tema els col·locarem en un únic projecte
-de Kotlin amb el nom del tema. en aquest cas l'anomenarem **Tema1**. Els
-exemples els col·locarem en un paquet anomenat **exemples** i els exercicis en
-un paquet anomenat **exercicis**.
-
+de Kotlin amb el nom del tema. en aquest cas l'anomenarem <b>Tema1</b>. Els
+exemples els col·locarem en un paquet anomenat <b>exemple</b> i els exercicis en
+un paquet anomenat <b>exercicis</b>.
+<p></p>
 En l'apartat d'objectius d'aquest tema, que és el de l'inici hi ha un vídeo
-que explica la instal·lació de l'entorn de programació, **IntelliJ IDEA** , i
+que explica la instal·lació de l'entorn de programació, <b>IntelliJ IDEA</b> , i
 al final d'aquest vídeo s'explica com crear el projecte, els paquets exemples
 i exercicis i com copiar els programes en un fitxer Kotlin.
+</div>
+---
 
 Mirem un exemple. Anem a fer un programa per a traure la llista de fitxers i
 directoris del directori actual. Per a fer referència al directori actual,
