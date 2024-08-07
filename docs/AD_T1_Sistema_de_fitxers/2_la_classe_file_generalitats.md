@@ -26,7 +26,7 @@ disposa** de cap mètode ni mecanisme per modificar la ruta associada. En cas
 de necessitar noves rutes, **caldrà sempre crear un nou objecte** i no serà
 possible reutilitzar els ja creats vinculant-los a rutes diferents.
 
-Per a crear un objecte **File** es pot utilitzar qualsevol dels 3 constructors
+Per a crear un objecte **File** es pot utilitzar qualsevol dels 3 **constructors**
 següents:
 
   * **File(String _directori_i_fitxer_)**: indiquem en un únic paràmetre tant el directori com el fitxer, és a dir, el fitxer amb la seua ruta. Recordeu que en sistemes Linux per a la ruta utilitzem la barra de dividir, mentre que en Windows la contra-barra. Com que aquest caràcter és el d'_escape_ , s'haurà de posar dues vegades: 
@@ -113,8 +113,8 @@ de Kotlin amb el nom del tema. en aquest cas l'anomenarem <b>Tema1</b>. Els
 exemples els col·locarem en un paquet anomenat <b>exemple</b> i els exercicis en
 un paquet anomenat <b>exercicis</b>.
 <p></p>
-En l'apartat d'objectius d'aquest tema, que és el de l'inici hi ha un vídeo
-que explica la instal·lació de l'entorn de programació, <b>IntelliJ IDEA</b> , i
+En l'apartat Instala.lació de <b>IntelliJ IDEA Ultimate</b> d'aquest tema, hi ha un vídeo
+que explica la instal·lació de l'entorn de programació, i
 al final d'aquest vídeo s'explica com crear el projecte, els paquets exemples
 i exercicis i com copiar els programes en un fitxer Kotlin.
 </div>

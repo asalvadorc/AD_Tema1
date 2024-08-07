@@ -47,7 +47,7 @@ En el següent exemple s'intenta mostrar això de les redundàncies, que
 **getCanonicalPath()** resol completament. Observeu com per a il·lustrar
 l'exemple fem referència a un fitxer d'una forma complicada. Suposem que el
 directori actiu és **/home/usuari/workspace/Tema1** , i volem fer referència a
-un fitxer situat en un subdirectori anomenat**fitxers**. Si copiem el següent
+un fitxer situat en un subdirectori anomenat **fitxers**. Si copiem el següent
 codi en el fitxer **Exemple_1_3.kt** :
 
     
@@ -65,7 +65,7 @@ codi en el fitxer **Exemple_1_3.kt** :
     }
 
 Si suposem que el directori actiu és
-**/home/usuari/IdeaProjects/Tema1**(recordeu que per defecte el directori
+**/home/usuari/IdeaProjects/Tema1** (recordeu que per defecte el directori
 actiu és el directori on està el projecte), el resultat serà:
 ~~~
 Nom del fitxer: f1.txt
@@ -183,8 +183,11 @@ on està situat el File
 ---|---  
 **getUsableSpace()** | Torna l'espai utilitzable per l'aplicació (menor que l'espai lliure)  
 **getTotalSpace()** | Torna l'espai total del dispositiu on està situat el File   
-  
-```Mètodes específics de Kotlin```
+
+<div style="background-color: #d6eaf8; color: black; padding: 5px;">  
+<b> Mètodes específics de Kotlin</b>
+</div>
+<p></p>
 
 Kotlin afegeix funcionalitat a la classe File. Així el següents mètodes són
 específics de Kotlin, i no els trobaríem en Java
